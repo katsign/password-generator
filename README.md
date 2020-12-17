@@ -1,1 +1,2 @@
-# password-generator
+# JavaScript Password Generator
+## Updated README incoming...
