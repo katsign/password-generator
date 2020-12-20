@@ -11,7 +11,7 @@ var symArr = sym.split("");
 
 // Prompts User
 
-window.onload = alert("Welcome! Please click 'Generate password' to start!");
+window.onload = alert("Welcome! Please click 'Generate Password' to start.");
 
 // Defines Main Function (Password Generation)
 
@@ -57,25 +57,33 @@ function writePassword() {
     }
     }
 
-    // Display Result
+    // Displays the Result
 
     document.getElementById("password").innerHTML = resultPassword;
 }
 
+// Bonus: Use Method to Copy Result to Clipboard
 
-// STARTER CODE:
+function copyClipboard(){
+  document.querySelector("textarea").select();
+  document.execCommand("Copy");
+  alert("Copied to Clipboard.");
+}
+
+/* STARTER CODE:
 
 // Assignment Code
-// var generateBtn = document.querySelector("#generate");
+var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
-//function writePassword() {
-//  var password = generatePassword();
-//  var passwordText = document.querySelector("#password");
+function writePassword() {
+var password = generatePassword();
+var passwordText = document.querySelector("#password");
 
-//  passwordText.value = password;
+passwordText.value = password;
 
-//}
+}
 
 // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", writePassword);
+*/
