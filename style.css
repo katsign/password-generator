@@ -155,6 +155,7 @@ button[disabled] {
   overflow: hidden;
 }
 
+/* These media queries make the buttons scale correctly when the window is resized. */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;

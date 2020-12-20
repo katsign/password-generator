@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--Main container for our card.-->
     <div class="wrapper">
       <header>
         <h1>Password Generator</h1>
       </header>
       <div class="card">
+        <!--I added a permanent user prompt to the HTML.-->
         <div class="card-header">
           <h2>Generating a Password</h2>
           <h3>Click on the <strong>Generate Password</strong> button and follow the prompts to create a unique, random password between 8-128 characters.</h3>
         </div>
+         <!--Text area for generated passwords.-->
         <div class="card-body">
           <textarea
             readonly
@@ -25,12 +28,14 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
+        <!--This div contains the buttons linked to our main JS functions.-->
         <div class="card-footer">
           <button onclick="writePassword()" id="generate" class="btn">Generate Password</button>
           <button onclick="copyClipboard()" id="generate" class="btn-2">Copy Result to Clipboard</button>
         </div>
       </div>
     </div>
+    <!--Always link the script sheet!-->
     <script src="script.js"></script>
   </body>
 </html>
